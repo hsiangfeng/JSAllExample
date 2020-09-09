@@ -17,7 +17,6 @@ function getData() {
 function selectFilter(data) {
   const cacheArr = data.map(item => item.Zone);
   const set = new Set(cacheArr);
-  const select = [...set];
 
   select.forEach((item) => {
     const option = document.createElement('option');
